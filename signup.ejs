@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Regestation</title>
+        <style>
+            body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 254, 254);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=email], input[type=number], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #c7bfbf;
+}
+
+
+
+input[type=text]:focus, input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+hr {
+  border: 1px solid #0e0d0d;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #c7bfbf;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1 ;
+  background-color: #44be4f;
+}
+        </style>
+    </head>
+    <body>
+        <form action="/signup" method="POST">
+            
+            <div>
+              <h1>Registration</h1>
+              <p>Please fill in this form.....</p>
+              <hr>
+          
+              <label><b>Name</b></label>
+              <input type="text" placeholder="Enter Name" name="name" id="name" required><br>
+          
+              <label><b>E-mail</b></label>
+              <input type="email" placeholder="Enter Email" name="email" id="email" required><br>
+          
+              <label><b>Phone Number</b></label>
+              <input type="number" placeholder="Enter Number" name="phno" id="phno" required><br>
+
+              <label><b>Password</b></label>
+              <input type="password" placeholder="Password" name="password" id="password" required><br>
+          
+             
+              
+              <button type="submit" class="registerbtn">Register</button>
+              
+            </a>
+            </div>
+            
+            
+          </form>
+          <a href="signin.ejs">
+            <button class="registerbtn">Already Registered</button>
+    </body>
+</html>
